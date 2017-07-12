@@ -74,10 +74,12 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
 
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         let indexPath = IndexPath(item: self.messages.count - 1, section: 0)
         self.collectionView?.scrollToItem(at: indexPath, at: .bottom, animated: false)
+        self.showEarlierMessage = true
+
 
     }
     
@@ -174,23 +176,6 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
         let arr = messages.filter {
             ( $0.imageUrl != nil ||  $0.videoUrl != nil)
         }
-        //             var images = [Message]()
-        //
-        //            for msg in arr{
-        //                if let url = msg.imageUrl {
-        //
-        //                }
-        //
-        //                if let url = msg.videoUrl {
-        //                    images.append(msg)
-        //
-        //                }
-        //            }
-        //
-        //
-        
-        
-        
         
         if let vc = UIApplication.shared.keyWindow?.visibleViewController{
             
@@ -218,14 +203,41 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
     
     //MARK: - Fetch Messages
     func fetchMessages(){
-        messages.append(Message(msg: "Hello all"))
-        messages.append(Message(msg: "This is quick demo"))
-        messages.append(Message(msg: "Texture’s basic unit is the node. ASDisplayNode is an abstraction over UIView, which in turn is an abstraction over CALayer. Unlike views, which can only be used on the main thread, nodes are thread-safe: you can instantiate and configure entire hierarchies of them in parallel on background threads."))
-        messages.append(Message(image: "https://s-media-cache-ak0.pinimg.com/736x/43/bd/ef/43bdef2a0af4f55238f1df4913b3188b--super-hero-shirts-ironman.jpg"))
-        messages.append(Message(msg: "Texture lets you move image decoding, text sizing and rendering, and other expensive UI operations off the main thread, to keep the main thread available to respond to user interaction. Texture has other tricks up its sleeve too… but we’ll get to that later"))
-        messages.append(Message(image: "https://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif", caption: "demo caption"))
-        messages.append(Message(msg: "Understanding of performance issue, especially some common uses like tableview pre rendering, helps"))
-        messages.append(Message(videourl: "https://www.w3schools.com/html/mov_bbb.mp4"))
+    
+        
+        if(showEarlierMessage == true){
+            
+            var paths = [IndexPath]()
+            var temp = [Message]()
+            for i in 0 ..< messages.count{
+                
+                temp.append(messages[i])
+                paths.append(IndexPath(item: i, section: 0))
+            }
+            
+            messages = temp + messages
+            self.collectionView?.performBatchUpdates({
+                
+                self.collectionView?.insertItems(at: paths)
+                
+                
+            }, completion: { (bool) in
+
+            })
+
+        }else{
+            messages.append(Message(msg: "Hello all"))
+            messages.append(Message(msg: "This is quick demo"))
+            messages.append(Message(msg: "Texture’s basic unit is the node. ASDisplayNode is an abstraction over UIView, which in turn is an abstraction over CALayer. Unlike views, which can only be used on the main thread, nodes are thread-safe: you can instantiate and configure entire hierarchies of them in parallel on background threads."))
+            messages.append(Message(image: "https://s-media-cache-ak0.pinimg.com/736x/43/bd/ef/43bdef2a0af4f55238f1df4913b3188b--super-hero-shirts-ironman.jpg"))
+            messages.append(Message(msg: "Texture lets you move image decoding, text sizing and rendering, and other expensive UI operations off the main thread, to keep the main thread available to respond to user interaction. Texture has other tricks up its sleeve too… but we’ll get to that later"))
+            messages.append(Message(image: "https://media3.giphy.com/media/kEKcOWl8RMLde/giphy.gif", caption: "demo caption"))
+            messages.append(Message(msg: "Understanding of performance issue, especially some common uses like tableview pre rendering, helps"))
+            messages.append(Message(videourl: "https://www.w3schools.com/html/mov_bbb.mp4"))
+            
+
+        }
+
 
     }
     
@@ -359,7 +371,7 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
     }
     
     
-    //MARK:-  User logic
+    //MARK:-  User Tag logic
     func removeAtr(textView : UITextView , range : NSRange , bool : Bool){
         
         
@@ -543,13 +555,16 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
     }
     
     
-    
+    //MARK: - Load Earlier
     func loadMoreMessages(){
-        //batch fetch
+        //batch fetch add more
+        fetchMessages()
+
+        
     }
     
     
-    
+    //MARK: - Camera
     func didPressAccessoryButton() {
         
         photo = MBPhotoPicker()
@@ -576,18 +591,13 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
         
     }
     
-    func showPop(){
-        let alert = UIAlertController(title: "ParentTown", message: "Unable to join this room", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Done", style: .cancel, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
     
     func confirmImagePost(img : UIImage){
         print("write your code for image")
         
     }
     
-    
+    //MARK: - Send
     func sendPressed(){
         if let textView = self.textView {
             //            print(textView.attributedText)
@@ -615,8 +625,14 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
                 //send logic
                 messages.append(Message(msg: attr.string))
                 self.collectionView?.insertItems(at: [IndexPath(item: messages.count - 1, section: 0)])
-                self.textView.text = nil
-            }
+                
+                
+                //Reset
+                self.textView?.text = nil
+                if let constraint: NSLayoutConstraint = self.constraint {
+                    self.textView?.removeConstraint(constraint)
+                }
+                self.inputToolbar.setNeedsLayout()            }
             
         }
     }
@@ -639,7 +655,6 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if(scrollView.isAtTop && (showEarlierMessage ) ){
             loadMoreMessages()
-            showEarlierMessage = false
         }
     }
     
