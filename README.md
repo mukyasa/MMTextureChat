@@ -1,15 +1,16 @@
 # MMTextureChat
-AsyncDisplayKit(Texture) Chat Simulation
+AsyncDisplayKit(Texture) Smooth Scroll Chat Simulation
 
 ## Demo
 
 
 ## Components 
 * Text Bubble
-* Image(GIF) Bubble
-* Image with Caption(GIF) Bubble
-* Video Bubble
-* Gallery
+* Image(GIF) Bubble (ASNetworknode)
+* Image with Caption(GIF) Bubble (ASNetworknode)
+* Video Bubble (ASVideonode)
+* Gallery (ASNetworknode,ASVideoNode)
+* Load Earlier Message (ChatCollectionViewFlowLayout)
 
 ## Dependencies
 * [texturegroup] https://github.com/texturegroup/texture/
