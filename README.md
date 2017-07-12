@@ -4,6 +4,12 @@ AsyncDisplayKit(Texture) Chat Simulation
 ## Demo
 
 
+## Components 
+* Text Bubble
+* Image(GIF) Bubble
+* Image with Caption(GIF) Bubble
+* Video Bubble
+* Gallery
 
 ## Dependencies
 * [texturegroup] https://github.com/texturegroup/texture/
