@@ -2,6 +2,7 @@
 AsyncDisplayKit(Texture) Smooth Scroll Chat Simulation
 
 ## Demo
+https://github.com/mukyasa/MMTextureChat/blob/master/MMTextureChat/texturechat.gif
 
 
 ## Components 
