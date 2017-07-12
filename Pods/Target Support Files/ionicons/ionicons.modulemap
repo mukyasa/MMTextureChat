@@ -1,0 +1,6 @@
+framework module ionicons {
+  umbrella header "ionicons-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Marcin Butanowicz on 03/01/16.
+
+*/
+"Alert title" = "照片選擇器";
+"Alert message" = "更改您的照片";
+
+"Action Cancel" = "取消";
+"Action take photo" = "拍照";
+"Action last photo" = "使用最後合影留念";
+"Action Library" = "選擇庫";
+"Action other" = "導入圖片從...";

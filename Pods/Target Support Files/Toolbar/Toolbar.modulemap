@@ -1,0 +1,6 @@
+framework module Toolbar {
+  umbrella header "Toolbar-umbrella.h"
+
+  export *
+  module * { export * }
+}

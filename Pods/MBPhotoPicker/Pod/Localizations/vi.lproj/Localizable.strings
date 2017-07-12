@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Marcin Butanowicz on 03/01/16.
+
+*/
+"Alert title" = "Photo bảng chọn";
+"Alert message" = "Thay đổi hình ảnh của bạn";
+
+"Action Cancel" = "Hủy bỏ";
+"Action take photo" = "Chụp ảnh";
+"Action last photo" = "Sử dụng Last Ảnh Taken";
+"Action Library" = "lựa chọn trong thư viện";
+"Action other" = "Image Nhập Khẩu ...";

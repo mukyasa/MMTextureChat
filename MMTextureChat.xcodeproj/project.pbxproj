@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		317C401D66237F722DEFD2CE /* Pods_MMTextureChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985C87E687E568D8BFD6570B /* Pods_MMTextureChat.framework */; };
+		8B1DF09B1F16044400AEA141 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1DF09A1F16044400AEA141 /* AVFoundation.framework */; };
+		8B1DF09D1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1DF09C1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift */; };
+		8BB672F01F14F20F00EEDC98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB672EF1F14F20F00EEDC98 /* AppDelegate.swift */; };
+		8BB672F21F14F20F00EEDC98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB672F11F14F20F00EEDC98 /* ViewController.swift */; };
+		8BB672F51F14F20F00EEDC98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB672F31F14F20F00EEDC98 /* Main.storyboard */; };
+		8BB672F71F14F20F00EEDC98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB672F61F14F20F00EEDC98 /* Assets.xcassets */; };
+		8BB672FA1F14F20F00EEDC98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB672F81F14F20F00EEDC98 /* LaunchScreen.storyboard */; };
+		8BB673021F14F23900EEDC98 /* ChatAsyncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673011F14F23900EEDC98 /* ChatAsyncCell.swift */; };
+		8BB673041F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673031F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift */; };
+		8BB673061F14F63900EEDC98 /* MessageVideoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673051F14F63900EEDC98 /* MessageVideoNode.swift */; };
+		8BB673081F14F82500EEDC98 /* MessageTextBubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673071F14F82500EEDC98 /* MessageTextBubbleNode.swift */; };
+		8BB6730A1F14F87000EEDC98 /* MessageTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673091F14F87000EEDC98 /* MessageTextNode.swift */; };
+		8BB6730C1F14FB7B00EEDC98 /* MessageCaptionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6730B1F14FB7B00EEDC98 /* MessageCaptionNode.swift */; };
+		8BB6730E1F14FBFB00EEDC98 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6730D1F14FBFB00EEDC98 /* Message.swift */; };
+		8BB673121F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673111F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift */; };
+		8BB673161F14FE9B00EEDC98 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673151F14FE9B00EEDC98 /* CGRectEx.swift */; };
+		8BB673181F1502CC00EEDC98 /* ChatAsyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673171F1502CC00EEDC98 /* ChatAsyncViewController.swift */; };
+		8BB6731B1F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673191F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift */; };
+		8BB6731C1F1502E200EEDC98 /* GalleryZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6731A1F1502E200EEDC98 /* GalleryZoomViewController.swift */; };
+		8BB6731E1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6731D1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift */; };
+		8BB673201F15085C00EEDC98 /* ScrollEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6731F1F15085C00EEDC98 /* ScrollEx.swift */; };
+		8BB673231F15089600EEDC98 /* TextNodeEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673221F15089600EEDC98 /* TextNodeEx.swift */; };
+		8BB673251F1508C100EEDC98 /* UIImageEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673241F1508C100EEDC98 /* UIImageEx.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E47C001C5CDCA93A39DF58E /* Pods-MMTextureChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTextureChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMTextureChat/Pods-MMTextureChat.debug.xcconfig"; sourceTree = "<group>"; };
+		673CC1BAAA018CFA7C7B156C /* Pods-MMTextureChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTextureChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMTextureChat/Pods-MMTextureChat.release.xcconfig"; sourceTree = "<group>"; };
+		8B1DF09A1F16044400AEA141 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8B1DF09C1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryVideoCollectionCell.swift; sourceTree = "<group>"; };
+		8BB672EC1F14F20F00EEDC98 /* MMTextureChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMTextureChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB672EF1F14F20F00EEDC98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BB672F11F14F20F00EEDC98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BB672F41F14F20F00EEDC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BB672F61F14F20F00EEDC98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BB672F91F14F20F00EEDC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BB672FB1F14F20F00EEDC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BB673011F14F23900EEDC98 /* ChatAsyncCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAsyncCell.swift; sourceTree = "<group>"; };
+		8BB673031F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageNetworkImageBubbleNode.swift; sourceTree = "<group>"; };
+		8BB673051F14F63900EEDC98 /* MessageVideoNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVideoNode.swift; sourceTree = "<group>"; };
+		8BB673071F14F82500EEDC98 /* MessageTextBubbleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTextBubbleNode.swift; sourceTree = "<group>"; };
+		8BB673091F14F87000EEDC98 /* MessageTextNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTextNode.swift; sourceTree = "<group>"; };
+		8BB6730B1F14FB7B00EEDC98 /* MessageCaptionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCaptionNode.swift; sourceTree = "<group>"; };
+		8BB6730D1F14FBFB00EEDC98 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8BB673111F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleImageProvider.swift; sourceTree = "<group>"; };
+		8BB673151F14FE9B00EEDC98 /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
+		8BB673171F1502CC00EEDC98 /* ChatAsyncViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAsyncViewController.swift; sourceTree = "<group>"; };
+		8BB673191F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryZoomCollectionViewCell.swift; sourceTree = "<group>"; };
+		8BB6731A1F1502E200EEDC98 /* GalleryZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryZoomViewController.swift; sourceTree = "<group>"; };
+		8BB6731D1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		8BB6731F1F15085C00EEDC98 /* ScrollEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollEx.swift; sourceTree = "<group>"; };
+		8BB673221F15089600EEDC98 /* TextNodeEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextNodeEx.swift; sourceTree = "<group>"; };
+		8BB673241F1508C100EEDC98 /* UIImageEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageEx.swift; sourceTree = "<group>"; };
+		985C87E687E568D8BFD6570B /* Pods_MMTextureChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMTextureChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BB672E91F14F20F00EEDC98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B1DF09B1F16044400AEA141 /* AVFoundation.framework in Frameworks */,
+				317C401D66237F722DEFD2CE /* Pods_MMTextureChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7715C130C2DF9977FA7EB1ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B1DF09A1F16044400AEA141 /* AVFoundation.framework */,
+				985C87E687E568D8BFD6570B /* Pods_MMTextureChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BB672E31F14F20F00EEDC98 = {
+			isa = PBXGroup;
+			children = (
+				8BB672EE1F14F20F00EEDC98 /* MMTextureChat */,
+				8BB672ED1F14F20F00EEDC98 /* Products */,
+				B9BC45774EC4A858F65B96D2 /* Pods */,
+				7715C130C2DF9977FA7EB1ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8BB672ED1F14F20F00EEDC98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BB672EC1F14F20F00EEDC98 /* MMTextureChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BB672EE1F14F20F00EEDC98 /* MMTextureChat */ = {
+			isa = PBXGroup;
+			children = (
+				8BB673101F14FC0C00EEDC98 /* Data */,
+				8BB6730F1F14FC0100EEDC98 /* View */,
+				8BB672EF1F14F20F00EEDC98 /* AppDelegate.swift */,
+				8BB673191F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift */,
+				8BB6731D1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift */,
+				8BB6731A1F1502E200EEDC98 /* GalleryZoomViewController.swift */,
+				8BB673171F1502CC00EEDC98 /* ChatAsyncViewController.swift */,
+				8BB672F11F14F20F00EEDC98 /* ViewController.swift */,
+				8BB672F31F14F20F00EEDC98 /* Main.storyboard */,
+				8BB672F61F14F20F00EEDC98 /* Assets.xcassets */,
+				8BB672F81F14F20F00EEDC98 /* LaunchScreen.storyboard */,
+				8BB672FB1F14F20F00EEDC98 /* Info.plist */,
+				8B1DF09C1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift */,
+			);
+			path = MMTextureChat;
+			sourceTree = "<group>";
+		};
+		8BB6730F1F14FC0100EEDC98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BB673011F14F23900EEDC98 /* ChatAsyncCell.swift */,
+				8BB673031F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift */,
+				8BB673051F14F63900EEDC98 /* MessageVideoNode.swift */,
+				8BB673071F14F82500EEDC98 /* MessageTextBubbleNode.swift */,
+				8BB673091F14F87000EEDC98 /* MessageTextNode.swift */,
+				8BB6730B1F14FB7B00EEDC98 /* MessageCaptionNode.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8BB673101F14FC0C00EEDC98 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8BB673211F15086800EEDC98 /* Extension */,
+				8BB673111F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift */,
+				8BB6730D1F14FBFB00EEDC98 /* Message.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		8BB673211F15086800EEDC98 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8BB673151F14FE9B00EEDC98 /* CGRectEx.swift */,
+				8BB6731F1F15085C00EEDC98 /* ScrollEx.swift */,
+				8BB673221F15089600EEDC98 /* TextNodeEx.swift */,
+				8BB673241F1508C100EEDC98 /* UIImageEx.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		B9BC45774EC4A858F65B96D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E47C001C5CDCA93A39DF58E /* Pods-MMTextureChat.debug.xcconfig */,
+				673CC1BAAA018CFA7C7B156C /* Pods-MMTextureChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BB672EB1F14F20F00EEDC98 /* MMTextureChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BB672FE1F14F20F00EEDC98 /* Build configuration list for PBXNativeTarget "MMTextureChat" */;
+			buildPhases = (
+				3A14868608105244F83FC5E4 /* [CP] Check Pods Manifest.lock */,
+				8BB672E81F14F20F00EEDC98 /* Sources */,
+				8BB672E91F14F20F00EEDC98 /* Frameworks */,
+				8BB672EA1F14F20F00EEDC98 /* Resources */,
+				71F3866178E0141B8C32340F /* [CP] Embed Pods Frameworks */,
+				C69FD5BD61FAEB0C3B01BC80 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMTextureChat;
+			productName = MMTextureChat;
+			productReference = 8BB672EC1F14F20F00EEDC98 /* MMTextureChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BB672E41F14F20F00EEDC98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MadAboutApps;
+				TargetAttributes = {
+					8BB672EB1F14F20F00EEDC98 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8BB672E71F14F20F00EEDC98 /* Build configuration list for PBXProject "MMTextureChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BB672E31F14F20F00EEDC98;
+			productRefGroup = 8BB672ED1F14F20F00EEDC98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BB672EB1F14F20F00EEDC98 /* MMTextureChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BB672EA1F14F20F00EEDC98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB672FA1F14F20F00EEDC98 /* LaunchScreen.storyboard in Resources */,
+				8BB672F71F14F20F00EEDC98 /* Assets.xcassets in Resources */,
+				8BB672F51F14F20F00EEDC98 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A14868608105244F83FC5E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71F3866178E0141B8C32340F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMTextureChat/Pods-MMTextureChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C69FD5BD61FAEB0C3B01BC80 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMTextureChat/Pods-MMTextureChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BB672E81F14F20F00EEDC98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB6731C1F1502E200EEDC98 /* GalleryZoomViewController.swift in Sources */,
+				8BB672F21F14F20F00EEDC98 /* ViewController.swift in Sources */,
+				8B1DF09D1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift in Sources */,
+				8BB673251F1508C100EEDC98 /* UIImageEx.swift in Sources */,
+				8BB673231F15089600EEDC98 /* TextNodeEx.swift in Sources */,
+				8BB6730A1F14F87000EEDC98 /* MessageTextNode.swift in Sources */,
+				8BB6731B1F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift in Sources */,
+				8BB672F01F14F20F00EEDC98 /* AppDelegate.swift in Sources */,
+				8BB673201F15085C00EEDC98 /* ScrollEx.swift in Sources */,
+				8BB6730E1F14FBFB00EEDC98 /* Message.swift in Sources */,
+				8BB673121F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift in Sources */,
+				8BB6731E1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift in Sources */,
+				8BB673041F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift in Sources */,
+				8BB6730C1F14FB7B00EEDC98 /* MessageCaptionNode.swift in Sources */,
+				8BB673021F14F23900EEDC98 /* ChatAsyncCell.swift in Sources */,
+				8BB673161F14FE9B00EEDC98 /* CGRectEx.swift in Sources */,
+				8BB673181F1502CC00EEDC98 /* ChatAsyncViewController.swift in Sources */,
+				8BB673081F14F82500EEDC98 /* MessageTextBubbleNode.swift in Sources */,
+				8BB673061F14F63900EEDC98 /* MessageVideoNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8BB672F31F14F20F00EEDC98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB672F41F14F20F00EEDC98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BB672F81F14F20F00EEDC98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BB672F91F14F20F00EEDC98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BB672FC1F14F20F00EEDC98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BB672FD1F14F20F00EEDC98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BB672FF1F14F20F00EEDC98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E47C001C5CDCA93A39DF58E /* Pods-MMTextureChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MMTextureChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandy.MMTextureChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8BB673001F14F20F00EEDC98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673CC1BAAA018CFA7C7B156C /* Pods-MMTextureChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MMTextureChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mandy.MMTextureChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BB672E71F14F20F00EEDC98 /* Build configuration list for PBXProject "MMTextureChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB672FC1F14F20F00EEDC98 /* Debug */,
+				8BB672FD1F14F20F00EEDC98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BB672FE1F14F20F00EEDC98 /* Build configuration list for PBXNativeTarget "MMTextureChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BB672FF1F14F20F00EEDC98 /* Debug */,
+				8BB673001F14F20F00EEDC98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BB672E41F14F20F00EEDC98 /* Project object */;
+}

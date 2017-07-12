@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Marcin Butanowicz on 03/01/16.
+
+*/
+"Alert title" = "Фото Выбор";
+"Alert message" = "Изменить фото";
+
+"Action Cancel" = "Отменить";
+"Action take photo" = "Сделать фото";
+"Action last photo" = "Используйте Последняя снимка";
+"Action Library" = "Выберите из библиотеки";
+"Action other" = "Импорт изображения Из ...";
