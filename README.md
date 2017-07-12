@@ -12,6 +12,7 @@ AsyncDisplayKit(Texture) Smooth Scroll Chat Simulation
 * Video Bubble (ASVideonode)
 * Gallery (ASNetworknode,ASVideoNode)
 * Load Earlier Message (ChatCollectionViewFlowLayout)
+* User Mention 
 
 ## Dependencies
 * [texturegroup] https://github.com/texturegroup/texture/
@@ -22,5 +23,10 @@ AsyncDisplayKit(Texture) Smooth Scroll Chat Simulation
 
 ## Credits
 * [nguyenhuy] https://github.com/nguyenhuy/AsyncMessagesViewController
+* [texturegroup] https://github.com/texturegroup/texture/
+
+
+# Download run and check the demo
+
 
 
