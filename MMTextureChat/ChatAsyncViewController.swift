@@ -181,18 +181,19 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
             
             if let _ = messages.index(of: message) {
                 
-                
-                let board = UIStoryboard(name: "Main", bundle: nil)
-                if let gallery = board.instantiateViewController(withIdentifier: "galleryzoom") as? GalleryZoomViewController{
-                    gallery.sourceURLArr = arr
-                    gallery.modalTransitionStyle = .crossDissolve
-                    if let index = arr.index(of: message){
-                        gallery.initialIndex = index
-                        
-                    }
+                let gallery = GalleryZoomViewController(collectionViewLayout: UICollectionViewLayout())
+                gallery.sourceURLArr = arr
+                gallery.modalTransitionStyle = .crossDissolve
+                if let index = arr.index(of: message){
+                    gallery.initialIndex = index
                     
-                    vc.present(gallery, animated: true, completion: nil)
                 }
+                
+                vc.present(gallery, animated: true, completion: nil)
+//                let board = UIStoryboard(name: "Main", bundle: nil)
+//                if let gallery = board.instantiateViewController(withIdentifier: "galleryzoom") as? GalleryZoomViewController{
+//
+//                }
                 
                 
             }

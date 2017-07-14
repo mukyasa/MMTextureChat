@@ -18,6 +18,16 @@ class GalleryZoomViewController: UICollectionViewController,UICollectionViewDele
     
     var sourceURLArr = [Message]()
     var initialIndex = 0
+    
+    
+    override init(collectionViewLayout layout: UICollectionViewLayout) {
+
+        super.init(collectionViewLayout: layout)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +45,8 @@ class GalleryZoomViewController: UICollectionViewController,UICollectionViewDele
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 0
         flowLayout.scrollDirection = .horizontal
+        
+        
         self.collectionView?.collectionViewLayout = flowLayout
         self.collectionView?.register(GalleryZoomCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         self.collectionView?.register(GalleryVideoCollectionCell.self, forCellWithReuseIdentifier: reusevideoIdentifier)

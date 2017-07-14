@@ -45,8 +45,7 @@ public class MessageTextBubbleNode: ASDisplayNode , ASTextNodeDelegate{
     
     
     public override func didLoad() {
-        //        let linkcolor = isOutgoing ? UIColor.white : Configuration.sharedInstance.tintColor!
-        //        textNode.addUserMention(highLightColor: linkcolor)
+
         
     }
     
