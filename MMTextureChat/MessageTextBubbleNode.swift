@@ -39,6 +39,7 @@ public class MessageTextBubbleNode: ASDisplayNode , ASTextNodeDelegate{
         textNode.delegate = self
         let linkcolor = isOutgoing ? UIColor.white : UIColor.blue
         textNode.addLinkDetection(attr.string, highLightColor: linkcolor)
+        textNode.addUserMention(highLightColor: linkcolor)
         
     }
     

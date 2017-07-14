@@ -37,3 +37,39 @@ extension ASTextNode{
         
     }
 }
+
+extension ASTextNode{
+    
+    
+    func addUserMention(highLightColor : UIColor){
+        
+        if let attrText = self.attributedText{
+            let replaced = NSMutableAttributedString(attributedString: attrText)
+            var ranges : [NSRange] = []
+
+            do{
+                let regex = try NSRegularExpression(pattern: "@(\\w+){1,}?", options: .caseInsensitive)
+                
+                
+                let result = regex.matches(in: attrText.string, options: NSRegularExpression.MatchingOptions.withTransparentBounds, range: NSMakeRange(0,(attrText.string as NSString).length))
+                
+               
+                let userDict = NSMutableDictionary()
+                for range in result{
+                    replaced.addAttribute(NSLinkAttributeName, value: "ptuser", range: range.range)
+                    replaced.addAttribute(NSUnderlineColorAttributeName, value: highLightColor, range: range.range)
+                    replaced.addAttribute(NSForegroundColorAttributeName, value: highLightColor, range: range.range)
+                    
+                }
+                
+          
+                
+                
+                self.attributedText = replaced
+                
+            }catch{}
+        }
+        
+    }
+    
+}

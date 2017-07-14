@@ -603,21 +603,21 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
             //            print(textView.attributedText)
             
             let attr = NSMutableAttributedString(attributedString: textView.attributedText)
-            
-            attr.enumerateAttributes( in: NSMakeRange(0, attr.length), options: NSAttributedString.EnumerationOptions.longestEffectiveRangeNotRequired, using: { (dict, range, bool) in
-                //                print(dict)
-                
-                for (key , value) in dict{
-                    if(key == NSLinkAttributeName){
-                        //                        print(value)
-                        if let jid = value as? String{
-                            attr.replaceCharacters(in: range, with: jid)
-                            
-                        }
-                        
-                    }
-                }
-            })
+//
+//            attr.enumerateAttributes( in: NSMakeRange(0, attr.length), options: NSAttributedString.EnumerationOptions.longestEffectiveRangeNotRequired, using: { (dict, range, bool) in
+//                //                print(dict)
+//                
+//                for (key , value) in dict{
+//                    if(key == NSLinkAttributeName){
+//                        //                        print(value)
+//                        if let jid = value as? String{
+//                            attr.replaceCharacters(in: range, with: jid)
+//                            
+//                        }
+//                        
+//                    }
+//                }
+//            })
             
             print(attr.string)
             
