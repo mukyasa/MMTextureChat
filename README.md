@@ -6,8 +6,11 @@ AsyncDisplayKit(Texture) Smooth Scroll Chat Simulation
 * Whatsapp style bubble
 * pod integration 
 
-## Demo
-![MMTextureChat](https://github.com/mukyasa/MMTextureChat/blob/master/MMTextureChat/texturechat.gif)<br/>
+## Demo iMessage
+![MMTextureChat](https://github.com/mukyasa/MMTextureChat/blob/master/MMTextureChat/texturechat_imessage.gif)<br/>
+
+## Demo Whatsapp
+![MMTextureChat](https://github.com/mukyasa/MMTextureChat/blob/master/MMTextureChat/texturechat_whatsapp.gif)<br/>
 
 
 ## Components 
