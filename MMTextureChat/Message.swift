@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+//Message model
 class Message: NSObject {
 
     var fromId: String?
