@@ -13,6 +13,9 @@ import DropDown
 import Toolbar
 import ionicons
 
+
+
+
 class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelegate {
     
     var collectionView : ASCollectionNode?
@@ -28,7 +31,12 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
     var showEarlierMessage = false
     var keyBoardTap : UITapGestureRecognizer!
     
+    var isWhatsapp = true
+    
 
+    let mineImage = UIImage(named: "bubbleMine")!.stretchableImage(withLeftCapWidth: 15, topCapHeight: 14).withRenderingMode(.alwaysTemplate)
+    let someoneImage = UIImage(named: "bubbleSomeone")!.stretchableImage(withLeftCapWidth: 21, topCapHeight: 14).withRenderingMode(.alwaysTemplate)
+    
     
     //Toolbar
     var toolbarBottomConstraint: NSLayoutConstraint?
@@ -100,6 +108,10 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
         self.collectionView?.dataSource = self
         view.addSubnode(self.collectionView!)
         
+        
+        if(isWhatsapp){
+            self.collectionView?.view.backgroundView = UIImageView(image: UIImage(named: "chatbackground"))
+        }
 
         
         //toolbar
@@ -624,7 +636,9 @@ class ChatAsyncViewController: UIViewController ,UITextViewDelegate , ChatDelega
             
             if(attr.string.characters.count != 0){
                 //send logic
-                messages.append(Message(msg: attr.string))
+                let msg = Message(msg: attr.string)
+                msg.fromId = ""
+                messages.append(msg)
                 self.collectionView?.insertItems(at: [IndexPath(item: messages.count - 1, section: 0)])
                 
                 
@@ -686,11 +700,21 @@ extension ChatAsyncViewController : ASCollectionDataSource{
     func collectionView(_ collectionView: ASCollectionView, nodeBlockForItemAt indexPath: IndexPath) -> ASCellNodeBlock {
         let msg = messages[indexPath.item]
         let isOut = msg.fromId == senderId ? true : false
-        
+        let img = isOut ? mineImage : someoneImage
         return {
-            let node = ChatAsyncCell(message: msg , isOutGoing: isOut)
-            node.delegate = self
-            return node
+            if(self.isWhatsapp){
+                let node = MessageWhatsappBubbleNode(msg: msg, isOutgoing: isOut, bubbleImage: img)
+                node.delegate = self
+                return node
+
+ 
+            }else{
+                let node = ChatAsyncCell(message: msg , isOutGoing: isOut)
+                node.delegate = self
+                return node
+
+ 
+            }
         }
     }
 }

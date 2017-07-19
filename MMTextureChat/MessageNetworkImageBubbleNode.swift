@@ -35,6 +35,7 @@ public class MessageNetworkImageBubbleNode: ASDisplayNode ,ASNetworkImageNodeDel
         if let url = URL(string: img){
             messageImageNode.url  = url
             messageImageNode.delegate = self
+            messageImageNode.clipsToBounds = true
             messageImageNode.shouldRenderProgressImages = true
         }
         

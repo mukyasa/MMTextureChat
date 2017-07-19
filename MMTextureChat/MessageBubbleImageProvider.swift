@@ -61,6 +61,8 @@ public class MessageBubbleImageProvider {
     
     private func buildBubbleImage(_ properties: MessageProperties) -> UIImage {
         let imageName = "bubble" + (properties.isOutgoing ? "_outgoing" : "_incoming") + (properties.hasTail ? "" : "_tailless")
+//        let imageName = properties.isOutgoing ? "bubbleMine" : "bubbleSomeone"//"bubble" + (properties.isOutgoing ? "_outgoing" : "_incoming") + (properties.hasTail ? "" : "_tailless")
+
        
         guard let bubble = UIImage(named : imageName) else {
             return UIImage()

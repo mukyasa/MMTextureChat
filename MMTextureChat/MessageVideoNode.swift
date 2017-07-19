@@ -83,34 +83,6 @@ class MessageVideoNode : ASDisplayNode{
 
     }
     
-    //MARK: - Video Delegate
-//    func videoNode(_ videoNode: ASVideoNode, willChange state: ASVideoNodePlayerState, to toState: ASVideoNodePlayerState) {
-//        switch state {
-//        case .loading:
-//            activity.startAnimating()
-//            break
-//            
-//        case .initialLoading:
-//            self.view.addSubview(activity)
-//            activity.center = videoNode.frame.center
-//            activity.startAnimating()
-//            break
-//            
-//            
-//        case .paused:
-//            playBut.isHidden = false
-//            activity.stopAnimating()
-//            
-//            break
-//            
-//        default:
-//            activity.stopAnimating()
-//            break
-//        }
-//    }
-    
-    
-    
     
     
 }

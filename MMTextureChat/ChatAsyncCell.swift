@@ -95,9 +95,9 @@ class ChatAsyncCell: ASCellNode,ASVideoNodeDelegate {
         let bubbleImg = bubbleImageProvider.bubbleImage(isOutgoing, hasTail: true)
         bubbleNode = nil
         contentTopTextNode = ASTextNode()
-
         
-        
+        //whatsapp
+//        bubbleImg = isOutGoing ? UIImage(named : "bubbleMine")! : UIImage(named : "bubbleSomeone")!
         
         if let url = message?.videoUrl{
             
@@ -118,6 +118,8 @@ class ChatAsyncCell: ASCellNode,ASVideoNodeDelegate {
         else{
             if let body = message?.text{
                 bubbleNode = MessageTextBubbleNode(text: NSAttributedString(attributedString: body), isOutgoing: isOutgoing, bubbleImage: bubbleImg)
+                
+//                bubbleNode = MessageWhatsappBubbleNode(text: NSAttributedString(attributedString: body), isOutgoing: isOutGoing, time: NSAttributedString(string: "06.00 AM", attributes: kAMMessageCellNodeTopTextAttributes), bubbleImage: bubbleImg)
                 
             }
         }

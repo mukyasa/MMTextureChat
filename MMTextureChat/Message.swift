@@ -35,7 +35,7 @@ class Message: NSObject {
         super.init()
 
         self.imageUrl = image
-        self.text = NSAttributedString(string : caption)
+        self.text = NSAttributedString(string : caption ,attributes : kAMMessageCellNodeBubbleAttributes)
         setdemotimeStamp(time: "06.30 AM", stamp: "Monday Jun", name: "Mandy")
 
     }

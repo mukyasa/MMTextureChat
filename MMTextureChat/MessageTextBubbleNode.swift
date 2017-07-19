@@ -11,9 +11,9 @@ import AsyncDisplayKit
 
 public class MessageTextBubbleNode: ASDisplayNode , ASTextNodeDelegate{
     
-    private let isOutgoing: Bool
-    private let bubbleImageNode: ASImageNode
-    private let textNode: ASTextNode
+    let isOutgoing: Bool
+    let bubbleImageNode: ASImageNode
+    let textNode: ASTextNode
     
     public init(text: NSAttributedString, isOutgoing: Bool, bubbleImage: UIImage) {
         self.isOutgoing = isOutgoing
@@ -43,12 +43,7 @@ public class MessageTextBubbleNode: ASDisplayNode , ASTextNodeDelegate{
         
     }
     
-    
-    public override func didLoad() {
 
-        
-    }
-    
     
     override public func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         let textNodeVerticalOffset = CGFloat(6)
@@ -76,3 +71,13 @@ public class MessageTextBubbleNode: ASDisplayNode , ASTextNodeDelegate{
 
     }
 }
+
+
+
+
+
+
+
+
+
+
