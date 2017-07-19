@@ -3,7 +3,6 @@ AsyncDisplayKit(Texture) Smooth Scroll Chat Simulation
 
 
 # To Do
-* Whatsapp style bubble
 * pod integration 
 
 ## Demo iMessage
