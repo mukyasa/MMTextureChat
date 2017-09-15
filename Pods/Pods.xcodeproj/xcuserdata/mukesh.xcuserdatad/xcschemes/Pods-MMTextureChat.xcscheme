@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7B4A43F855D454D27731325A07E4470"
+               BlueprintIdentifier = "C76CC600153FB93AEF6BD8F79C44D22C"
                BuildableName = "Pods_MMTextureChat.framework"
                BlueprintName = "Pods-MMTextureChat"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7B4A43F855D454D27731325A07E4470"
+            BlueprintIdentifier = "C76CC600153FB93AEF6BD8F79C44D22C"
             BuildableName = "Pods_MMTextureChat.framework"
             BlueprintName = "Pods-MMTextureChat"
             ReferencedContainer = "container:Pods.xcodeproj">

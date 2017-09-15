@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		317C401D66237F722DEFD2CE /* Pods_MMTextureChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985C87E687E568D8BFD6570B /* Pods_MMTextureChat.framework */; };
 		8B1DF09B1F16044400AEA141 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1DF09A1F16044400AEA141 /* AVFoundation.framework */; };
-		8B1DF09D1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1DF09C1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift */; };
-		8B6277FE1F1F62910007D8FE /* MessageWhatsappVideoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6277FD1F1F62910007D8FE /* MessageWhatsappVideoNode.swift */; };
-		8B6278011F1F62FB0007D8FE /* MessageNetworkWhatsappImageBubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6278001F1F62FB0007D8FE /* MessageNetworkWhatsappImageBubbleNode.swift */; };
-		8B6278031F1F632B0007D8FE /* MessageWhatsappTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6278021F1F632B0007D8FE /* MessageWhatsappTextNode.swift */; };
-		8B6278051F1F63650007D8FE /* MessageWhatsappBubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6278041F1F63650007D8FE /* MessageWhatsappBubbleNode.swift */; };
 		8B6278091F1F6B6A0007D8FE /* texturechat_imessage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6278071F1F6B6A0007D8FE /* texturechat_imessage.gif */; };
 		8B62780A1F1F6B6A0007D8FE /* texturechat_whatsapp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B6278081F1F6B6A0007D8FE /* texturechat_whatsapp.gif */; };
 		8BB672F01F14F20F00EEDC98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB672EF1F14F20F00EEDC98 /* AppDelegate.swift */; };
@@ -21,33 +16,12 @@
 		8BB672F51F14F20F00EEDC98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB672F31F14F20F00EEDC98 /* Main.storyboard */; };
 		8BB672F71F14F20F00EEDC98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB672F61F14F20F00EEDC98 /* Assets.xcassets */; };
 		8BB672FA1F14F20F00EEDC98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB672F81F14F20F00EEDC98 /* LaunchScreen.storyboard */; };
-		8BB673021F14F23900EEDC98 /* ChatAsyncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673011F14F23900EEDC98 /* ChatAsyncCell.swift */; };
-		8BB673041F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673031F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift */; };
-		8BB673061F14F63900EEDC98 /* MessageVideoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673051F14F63900EEDC98 /* MessageVideoNode.swift */; };
-		8BB673081F14F82500EEDC98 /* MessageTextBubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673071F14F82500EEDC98 /* MessageTextBubbleNode.swift */; };
-		8BB6730A1F14F87000EEDC98 /* MessageTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673091F14F87000EEDC98 /* MessageTextNode.swift */; };
-		8BB6730C1F14FB7B00EEDC98 /* MessageCaptionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6730B1F14FB7B00EEDC98 /* MessageCaptionNode.swift */; };
-		8BB6730E1F14FBFB00EEDC98 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6730D1F14FBFB00EEDC98 /* Message.swift */; };
-		8BB673121F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673111F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift */; };
-		8BB673161F14FE9B00EEDC98 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673151F14FE9B00EEDC98 /* CGRectEx.swift */; };
-		8BB673181F1502CC00EEDC98 /* ChatAsyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673171F1502CC00EEDC98 /* ChatAsyncViewController.swift */; };
-		8BB6731B1F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673191F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift */; };
-		8BB6731C1F1502E200EEDC98 /* GalleryZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6731A1F1502E200EEDC98 /* GalleryZoomViewController.swift */; };
-		8BB6731E1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6731D1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift */; };
-		8BB673201F15085C00EEDC98 /* ScrollEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6731F1F15085C00EEDC98 /* ScrollEx.swift */; };
-		8BB673231F15089600EEDC98 /* TextNodeEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673221F15089600EEDC98 /* TextNodeEx.swift */; };
-		8BB673251F1508C100EEDC98 /* UIImageEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB673241F1508C100EEDC98 /* UIImageEx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E47C001C5CDCA93A39DF58E /* Pods-MMTextureChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTextureChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMTextureChat/Pods-MMTextureChat.debug.xcconfig"; sourceTree = "<group>"; };
 		673CC1BAAA018CFA7C7B156C /* Pods-MMTextureChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMTextureChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMTextureChat/Pods-MMTextureChat.release.xcconfig"; sourceTree = "<group>"; };
 		8B1DF09A1F16044400AEA141 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		8B1DF09C1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryVideoCollectionCell.swift; sourceTree = "<group>"; };
-		8B6277FD1F1F62910007D8FE /* MessageWhatsappVideoNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageWhatsappVideoNode.swift; sourceTree = "<group>"; };
-		8B6278001F1F62FB0007D8FE /* MessageNetworkWhatsappImageBubbleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageNetworkWhatsappImageBubbleNode.swift; sourceTree = "<group>"; };
-		8B6278021F1F632B0007D8FE /* MessageWhatsappTextNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageWhatsappTextNode.swift; sourceTree = "<group>"; };
-		8B6278041F1F63650007D8FE /* MessageWhatsappBubbleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageWhatsappBubbleNode.swift; sourceTree = "<group>"; };
 		8B6278071F1F6B6A0007D8FE /* texturechat_imessage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = texturechat_imessage.gif; sourceTree = "<group>"; };
 		8B6278081F1F6B6A0007D8FE /* texturechat_whatsapp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = texturechat_whatsapp.gif; sourceTree = "<group>"; };
 		8BB672EC1F14F20F00EEDC98 /* MMTextureChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMTextureChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,22 +31,6 @@
 		8BB672F61F14F20F00EEDC98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BB672F91F14F20F00EEDC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BB672FB1F14F20F00EEDC98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BB673011F14F23900EEDC98 /* ChatAsyncCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAsyncCell.swift; sourceTree = "<group>"; };
-		8BB673031F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageNetworkImageBubbleNode.swift; sourceTree = "<group>"; };
-		8BB673051F14F63900EEDC98 /* MessageVideoNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVideoNode.swift; sourceTree = "<group>"; };
-		8BB673071F14F82500EEDC98 /* MessageTextBubbleNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTextBubbleNode.swift; sourceTree = "<group>"; };
-		8BB673091F14F87000EEDC98 /* MessageTextNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTextNode.swift; sourceTree = "<group>"; };
-		8BB6730B1F14FB7B00EEDC98 /* MessageCaptionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCaptionNode.swift; sourceTree = "<group>"; };
-		8BB6730D1F14FBFB00EEDC98 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		8BB673111F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleImageProvider.swift; sourceTree = "<group>"; };
-		8BB673151F14FE9B00EEDC98 /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
-		8BB673171F1502CC00EEDC98 /* ChatAsyncViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAsyncViewController.swift; sourceTree = "<group>"; };
-		8BB673191F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryZoomCollectionViewCell.swift; sourceTree = "<group>"; };
-		8BB6731A1F1502E200EEDC98 /* GalleryZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryZoomViewController.swift; sourceTree = "<group>"; };
-		8BB6731D1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		8BB6731F1F15085C00EEDC98 /* ScrollEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollEx.swift; sourceTree = "<group>"; };
-		8BB673221F15089600EEDC98 /* TextNodeEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextNodeEx.swift; sourceTree = "<group>"; };
-		8BB673241F1508C100EEDC98 /* UIImageEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageEx.swift; sourceTree = "<group>"; };
 		985C87E687E568D8BFD6570B /* Pods_MMTextureChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMTextureChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,74 +54,6 @@
 				985C87E687E568D8BFD6570B /* Pods_MMTextureChat.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8B1DF09E1F16253000AEA141 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				8BB673191F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift */,
-				8B1DF09C1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift */,
-			);
-			name = Cell;
-			sourceTree = "<group>";
-		};
-		8B1DF09F1F16253E00AEA141 /* Bubbles */ = {
-			isa = PBXGroup;
-			children = (
-				8B6278061F1F639E0007D8FE /* BaseNode */,
-				8B6277FF1F1F62CA0007D8FE /* Whatsapp */,
-				8B6277FC1F1CD1790007D8FE /* iMessage */,
-			);
-			name = Bubbles;
-			sourceTree = "<group>";
-		};
-		8B1DF0A01F16254C00AEA141 /* Layout */ = {
-			isa = PBXGroup;
-			children = (
-				8BB6731D1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift */,
-			);
-			name = Layout;
-			sourceTree = "<group>";
-		};
-		8B1DF0A11F16255600AEA141 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8BB6731A1F1502E200EEDC98 /* GalleryZoomViewController.swift */,
-				8BB673171F1502CC00EEDC98 /* ChatAsyncViewController.swift */,
-				8BB672F11F14F20F00EEDC98 /* ViewController.swift */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		8B6277FC1F1CD1790007D8FE /* iMessage */ = {
-			isa = PBXGroup;
-			children = (
-				8BB673011F14F23900EEDC98 /* ChatAsyncCell.swift */,
-				8BB673031F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift */,
-				8BB673051F14F63900EEDC98 /* MessageVideoNode.swift */,
-				8BB673071F14F82500EEDC98 /* MessageTextBubbleNode.swift */,
-			);
-			name = iMessage;
-			sourceTree = "<group>";
-		};
-		8B6277FF1F1F62CA0007D8FE /* Whatsapp */ = {
-			isa = PBXGroup;
-			children = (
-				8B6277FD1F1F62910007D8FE /* MessageWhatsappVideoNode.swift */,
-				8B6278001F1F62FB0007D8FE /* MessageNetworkWhatsappImageBubbleNode.swift */,
-				8B6278021F1F632B0007D8FE /* MessageWhatsappTextNode.swift */,
-				8B6278041F1F63650007D8FE /* MessageWhatsappBubbleNode.swift */,
-			);
-			name = Whatsapp;
-			sourceTree = "<group>";
-		};
-		8B6278061F1F639E0007D8FE /* BaseNode */ = {
-			isa = PBXGroup;
-			children = (
-				8BB673091F14F87000EEDC98 /* MessageTextNode.swift */,
-				8BB6730B1F14FB7B00EEDC98 /* MessageCaptionNode.swift */,
-			);
-			name = BaseNode;
 			sourceTree = "<group>";
 		};
 		8BB672E31F14F20F00EEDC98 = {
@@ -190,46 +80,13 @@
 				8BB672EF1F14F20F00EEDC98 /* AppDelegate.swift */,
 				8B6278071F1F6B6A0007D8FE /* texturechat_imessage.gif */,
 				8B6278081F1F6B6A0007D8FE /* texturechat_whatsapp.gif */,
-				8BB673101F14FC0C00EEDC98 /* Data */,
-				8BB6730F1F14FC0100EEDC98 /* View */,
-				8B1DF0A01F16254C00AEA141 /* Layout */,
-				8B1DF0A11F16255600AEA141 /* Controller */,
+				8BB672F11F14F20F00EEDC98 /* ViewController.swift */,
 				8BB672F31F14F20F00EEDC98 /* Main.storyboard */,
 				8BB672F61F14F20F00EEDC98 /* Assets.xcassets */,
 				8BB672F81F14F20F00EEDC98 /* LaunchScreen.storyboard */,
 				8BB672FB1F14F20F00EEDC98 /* Info.plist */,
 			);
 			path = MMTextureChat;
-			sourceTree = "<group>";
-		};
-		8BB6730F1F14FC0100EEDC98 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8B1DF09E1F16253000AEA141 /* Cell */,
-				8B1DF09F1F16253E00AEA141 /* Bubbles */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		8BB673101F14FC0C00EEDC98 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				8BB673211F15086800EEDC98 /* Extension */,
-				8BB673111F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift */,
-				8BB6730D1F14FBFB00EEDC98 /* Message.swift */,
-			);
-			name = Data;
-			sourceTree = "<group>";
-		};
-		8BB673211F15086800EEDC98 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				8BB673151F14FE9B00EEDC98 /* CGRectEx.swift */,
-				8BB6731F1F15085C00EEDC98 /* ScrollEx.swift */,
-				8BB673221F15089600EEDC98 /* TextNodeEx.swift */,
-				8BB673241F1508C100EEDC98 /* UIImageEx.swift */,
-			);
-			name = Extension;
 			sourceTree = "<group>";
 		};
 		B9BC45774EC4A858F65B96D2 /* Pods */ = {
@@ -366,29 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BB6731C1F1502E200EEDC98 /* GalleryZoomViewController.swift in Sources */,
 				8BB672F21F14F20F00EEDC98 /* ViewController.swift in Sources */,
-				8B1DF09D1F160A3B00AEA141 /* GalleryVideoCollectionCell.swift in Sources */,
-				8BB673251F1508C100EEDC98 /* UIImageEx.swift in Sources */,
-				8BB673231F15089600EEDC98 /* TextNodeEx.swift in Sources */,
-				8BB6730A1F14F87000EEDC98 /* MessageTextNode.swift in Sources */,
-				8B6278051F1F63650007D8FE /* MessageWhatsappBubbleNode.swift in Sources */,
-				8BB6731B1F1502E200EEDC98 /* GalleryZoomCollectionViewCell.swift in Sources */,
-				8B6277FE1F1F62910007D8FE /* MessageWhatsappVideoNode.swift in Sources */,
 				8BB672F01F14F20F00EEDC98 /* AppDelegate.swift in Sources */,
-				8BB673201F15085C00EEDC98 /* ScrollEx.swift in Sources */,
-				8BB6730E1F14FBFB00EEDC98 /* Message.swift in Sources */,
-				8BB673121F14FD1F00EEDC98 /* MessageBubbleImageProvider.swift in Sources */,
-				8BB6731E1F15056700EEDC98 /* ChatCollectionViewFlowLayout.swift in Sources */,
-				8BB673041F14F5AC00EEDC98 /* MessageNetworkImageBubbleNode.swift in Sources */,
-				8B6278031F1F632B0007D8FE /* MessageWhatsappTextNode.swift in Sources */,
-				8BB6730C1F14FB7B00EEDC98 /* MessageCaptionNode.swift in Sources */,
-				8B6278011F1F62FB0007D8FE /* MessageNetworkWhatsappImageBubbleNode.swift in Sources */,
-				8BB673021F14F23900EEDC98 /* ChatAsyncCell.swift in Sources */,
-				8BB673161F14FE9B00EEDC98 /* CGRectEx.swift in Sources */,
-				8BB673181F1502CC00EEDC98 /* ChatAsyncViewController.swift in Sources */,
-				8BB673081F14F82500EEDC98 /* MessageTextBubbleNode.swift in Sources */,
-				8BB673061F14F63900EEDC98 /* MessageVideoNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

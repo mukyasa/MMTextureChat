@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9DBF7FB6E5773E834AA9DD1EC321D8C5'
-               BlueprintName = 'Toolbar'
+               BlueprintIdentifier = '807F28A6A933DC31499EB66157E8231E'
+               BlueprintName = 'MMChatFramework'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Toolbar.framework'>
+               BuildableName = 'MMChatFramework.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

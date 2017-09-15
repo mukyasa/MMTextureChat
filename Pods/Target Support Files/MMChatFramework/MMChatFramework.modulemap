@@ -1,0 +1,6 @@
+framework module MMChatFramework {
+  umbrella header "MMChatFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MMChatFramework
 
-class ViewController: UIViewController {
+class ViewController: ChatAsyncViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
