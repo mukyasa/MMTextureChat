@@ -2,8 +2,8 @@
 AsyncDisplayKit(Texture) Smooth Scroll Chat Simulation
 
 
-# To Do
-* pod integration 
+# Pod Install
+`pod MMChatFramework`
 
 ## Demo iMessage
 ![MMTextureChat](https://github.com/mukyasa/MMTextureChat/blob/master/MMTextureChat/texturechat_imessage.gif)<br/>
