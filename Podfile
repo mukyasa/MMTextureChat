@@ -7,5 +7,5 @@ target 'MMTextureChat' do
 	pod 'MMChatFramework'
   # Pods for MMTextureChat
   
-
+#
 end
